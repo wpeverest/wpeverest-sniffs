@@ -1,0 +1,25 @@
+{
+  "name": "wpeverest/wpeverest-sniffs",
+  "description": "WPEverest sniffs",
+  "type": "phpcodesniffer-standard",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Shiva Poudel",
+      "email": "dev.shivapoudel@gmail.com"
+    }
+  ],
+  "keywords": [
+    "phpcs",
+    "standards",
+    "WordPress",
+    "WPEverest"
+  ],
+  "require": {
+    "php": ">=7.0",
+    "squizlabs/php_codesniffer": "^3.0.2"
+  },
+  "suggest": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3"
+  }
+}
