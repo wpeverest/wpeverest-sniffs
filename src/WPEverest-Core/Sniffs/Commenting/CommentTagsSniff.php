@@ -46,7 +46,23 @@ class CommentTagsSniff implements Sniff
             '@category'  => 'CategoryTag',
             '@license'   => 'LicenseTag',
             '@copyright' => 'CopyrightTag',
+            '@access'    => 'AccessTag',
         ];
+    }
+
+    /**
+     * Get error message.
+     *
+     * @param string $key
+     * @return string
+     */
+    protected function getErrorMessage(string $key): string
+    {
+        if ($key === '@category') {
+            return "@category is deprecated, use @package instead";
+        }
+
+        return "{$key} tags are prohibited";
     }
 
     /**
@@ -62,8 +78,7 @@ class CommentTagsSniff implements Sniff
 
         foreach ($this->getProhibitedTags() as $key => $value) {
             if ($key === $tokens[$stackPtr]['content']) {
-                $error = "{$key} tags are prohibited";
-                $phpcsFile->addError($error, $stackPtr, $value);
+                $phpcsFile->addError($this->getErrorMessage($key), $stackPtr, $value);
             }
         }
     }
