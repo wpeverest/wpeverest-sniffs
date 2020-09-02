@@ -1,2 +1,6 @@
-vendor/
+*.log
 .idea
+.vscode/
+.DS_Store
+Thumbs.db
+/vendor/

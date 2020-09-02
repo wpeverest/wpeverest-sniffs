@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
-<ruleset name="WPEverest Core" namespace="WPEverest">
+<ruleset name="WPEverest Core">
 	<description>WPEverest Core coding standards.</description>
+
+    <!-- Include all of our custom sniffs -->
+    <rule ref="WPEverest" />
 
 	<!-- PHPCompatibility -->
     <rule ref="PHPCompatibilityWP" />

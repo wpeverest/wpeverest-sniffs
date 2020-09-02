@@ -24,10 +24,10 @@ PHPCS config file:
 <?xml version="1.0"?>
 <ruleset name="WPEverst Coding Standards">
     <description>My projects ruleset.</description>
-    
+
     <!-- Configs -->
     <config name="minimum_supported_wp_version" value="4.7" />
-    <config name="testVersion" value="5.2-" />
+    <config name="testVersion" value="7.2-" />
 
     <!-- Rules -->
     <rule ref="WPEverst-Core" />

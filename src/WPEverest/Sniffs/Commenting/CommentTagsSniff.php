@@ -3,7 +3,7 @@
  * Sniff to prohibit some file comment tags on WPEverest
  */
 
-namespace WPEverest\Core\Sniffs\Commenting;
+namespace WPEverest\Sniffs\Commenting;
 
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;
@@ -46,7 +46,7 @@ class CommentTagsSniff implements Sniff
             '@category'  => 'CategoryTag',
             '@license'   => 'LicenseTag',
             '@copyright' => 'CopyrightTag',
-            '@access'    => 'AccessTag',
+            '@access'    => 'AccessTag'
         ];
     }
 
