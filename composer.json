@@ -1,24 +1,24 @@
 {
-  "name": "wpeverest/wpeverest-sniffs",
-  "description": "WPEverest sniffs",
-  "type": "phpcodesniffer-standard",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Shiva Poudel",
-      "email": "dev.shivapoudel@gmail.com"
+    "name": "wpeverest/wpeverest-sniffs",
+    "description": "WPEverest sniffs",
+    "type": "phpcodesniffer-standard",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shiva Poudel",
+            "email": "dev.shivapoudel@gmail.com"
+        }
+    ],
+    "keywords": [
+        "phpcs",
+        "standards",
+        "WordPress",
+        "WPEverest"
+    ],
+    "require": {
+        "php": "^7.0",
+        "wp-coding-standards/wpcs": "^2.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+        "phpcompatibility/phpcompatibility-wp": "^2.1"
     }
-  ],
-  "keywords": [
-    "phpcs",
-    "standards",
-    "WordPress",
-    "WPEverest"
-  ],
-  "require": {
-    "php": ">=7.0",
-    "wp-coding-standards/wpcs": "2.3.0",
-    "dealerdirect/phpcodesniffer-composer-installer": "0.7.0",
-    "phpcompatibility/phpcompatibility-wp": "2.1.0"
-  }
 }
